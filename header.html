@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+	<link rel="stylesheet" href="nav.css"/>
+</head>
+<body>
+	<header>
+		<img class="headerLogoLeft" src="Images/ScaledFDTDLogo.png"/>
+		<img class="headerLogoRight" src="Images/ScaledFDTDLogo.png"/>
+		<div class="navBtn"></div>
+		<ul class="navMenu">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Gallery</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact/Book Us</a></li>
+		</ul>	
+	</header>
+	<script>
+		$('div.navBtn').click(function() {
+			$('ul.navMenu').slideToggle();
+		});
+		
+		$(window).resize(function() {
+			if( $(window).width() > 660 ) {
+				$('ul.navMenu').removeAttr('style');
+			}
+		});
+	</script>
+</body>
+</html>

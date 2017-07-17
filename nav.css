@@ -1,0 +1,113 @@
+header {
+	position:absolute;
+	top:0px;
+	left:20%;
+	right:20%;
+	background-color:black;
+	height:120px;
+	width:60%;
+}
+.headerLogoLeft {
+	max-height:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.headerLogoRight {
+	max-height:100%;
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+
+.navMenu {
+	position:absolute;
+	right:22%;
+	top:10%;
+}
+.navMenu li {
+	display:inline;
+}
+.navMenu a {
+	text-decoration:none;
+	font-family:verdana;
+	font-weight:bold;
+	font-size:1.3em;
+	color:white;
+	margin:5px;
+	padding:5px; 
+}
+.navMenu a:visited {
+	color:white;
+}
+.navMenu a:hover {
+	color:#20d0ff;
+}
+.navMenu a:active {
+	color:red;
+}
+
+@media only screen and (max-width:1400px) {
+	header {
+		width:80%;
+		left:10%;
+		right:10%;
+	}
+}
+
+@media only screen and (max-width:1200px) {
+	header {
+		width:90%;
+		left:5%;
+		right:5%;
+	}
+}
+
+@media only screen and (max-width:850px) {
+	.headerLogoRight {
+		display:none;
+	}
+	
+	.navMenu {
+		right:5%;
+	}
+}
+
+@media only screen and (max-width:700px) {
+	.navMenu {
+		display:none;
+		top:10px;
+		right:10%;
+		padding-left:0px;
+		border:3px outset black;
+		background-color:white;
+		opacity:.5;
+	}
+	.navMenu li {
+		display:block;
+	}
+	.navMenu a {
+		color:black;
+	}
+	.navMenu a:visited {
+	color:black;
+	}
+	.navMenu a:hover {
+	color:#20d0ff;
+	}
+	.navMenu a:active {
+		color:red;
+	}
+
+	.headerLogoRight {
+		display:none;
+	}
+	header {
+		height:60px;
+	}
+}
+
+
+
+
+
