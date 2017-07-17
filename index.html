@@ -8,37 +8,39 @@
 </head>
 
 <body>
-	<div id="pageContainer">
-		<header id="titlebar">
-			<img id="titleLogoLeft" src="ScaledFDTDLogo.png"/>
-			<img id="titleLogoRight" src="ScaledFDTDLogo.png"/>
-			<div class="titleMenu">
-				<a href="#">Home</a>
-				<a href="#">Gallery</a>
-				<a href="#">About</a>
-				<a href="#">Contact/Book Us</a>
-			</div>
-			<div class="socMedia">
-				<ul style="list-style-type:none; padding-left:0px">
-					<li><a href="https://www.facebook.com/fromdawntilldeath/" title="From Dawn Till Death Facebook"><img src="fbLogo.png"/></a></li>
-					<li><img src="twitterLogo.png"/></li>
-					<li><img src="instaLogo.png"/></li>
-					<li><img src="sCloudLogo.png"/></li>
-					<li><a href="https://www.reverbnation.com/fromdawntilldeath" title="From Dawn Till Death Reverbnation"><img src="reverbLogo.png"/></a></li>
-				</ul>
-			</div>
+	<div class="pageContainer">
+		<header class="headerBar">
+			<img class="headerLogoLeft" src="ScaledFDTDLogo.png"/>
+			<img class="headerLogoRight" src="ScaledFDTDLogo.png"/>
+			<div class="navBtn"></div>
+			<ul class="navMenu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact/Book Us</a></li>
+			</ul>			
+			<ul class="socMedia">
+				<li><a href="https://www.facebook.com/fromdawntilldeath/" title="From Dawn Till Death Facebook"><img src="fbLogo.png"/></a></li>
+				<li><img src="twitterLogo.png"/></li>
+				<li><img src="instaLogo.png"/></li>
+<!--
+				<li><img src="sCloudLogo.png"/></li>
+-->
+				<li><a href="https://www.reverbnation.com/fromdawntilldeath" title="From Dawn Till Death Reverbnation"><img src="reverbLogo.png"/></a></li>
+			</ul>		
 		</header>
 		<div class="content">
-			<h2 id="upcomingSchedule" align="center">Upcoming Shows</h2>
+			<img id="FDTDCoverPic" src="FDTD_Cover_Photo.jpg"/>
+			<h2 align="center">Upcoming Shows</h2>
 			<div class="widget_iframe" style="display:inline-block;width:100%;height:550px;margin:0;padding:0;border:0;">
 				<iframe class="widget_iframe" src="https://www.reverbnation.com/widget_code/html_widget/artist_5440973?widget_id=52&amp;posted_by=artist_5440973&amp;pwc[design]=default&amp;pwc[background_color]=%23333333&amp;pwc[layout]=detailed&amp;pwc[show_map]=0&amp;pwc[size]=fit" scrolling="no" width="100%" height="100%" frameborder="0"></iframe>
 				<div class="footer_branding" style="margin-top:-5px;font-size:10px;font-family:Arial;">
 					<center><a href="https://www.reverbnation.com/band-promotion/promoteit?utm_campaign=a_features_promote_it&utm_medium=widget&utm_source=HTML5_Show_Schedule&utm_content=widgetfooter_Learn how to get your music noticed at ReverbNation.com" target="_blank" style="text-decoration:none;color:#444;">Learn how to get your music noticed at ReverbNation.com</a></center>
 				</div>
 			</div>
-			<h2 id="showHighlights" align="center">Show Highlights</h2>
+			<h2 align="center">Show Highlights</h2>
 			<img id="bandPhoto" src="bandPhoto.jpg"/>
-			<h2 id="venuesWePlayAt" align="center">Venues We Play At</h2>
+			<h2 align="center">Venues We Play At</h2>
 			<ul id="venuesList" style="list-style-type:none; padding-left:0px">
 				<li><img src="fatDaddysLogo.png"/></li>
 				<hr align="center" style="width:95%" />
@@ -52,5 +54,17 @@
 		</footer>
 	</div>
 	<script src="main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$('div.navBtn').click(function() {
+			$('ul.navMenu').slideToggle();
+		})
+		
+		$(window).resize(function() {
+			if( $(window).width() > 660 ) {
+				$('ul.navMenu').removeAttr('style');
+			}
+		})
+	</script>
 </body>
 </html>

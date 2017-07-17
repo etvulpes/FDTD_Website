@@ -1,13 +1,13 @@
-#pageContainer {
+.pageContainer {
 	position:absolute;
 	top:0px;
 	left:0px;
 	padding:0px;
 	width:100%;
-	background-color:#555555;
+	background-color:#555555;;
 }
 
-#titlebar {
+.headerBar {
 	position:absolute;
 	top:0px;
 	left:20%;
@@ -16,51 +16,54 @@
 	height:120px;
 	width:60%;
 }
-
-#titleLogoLeft {
+.headerLogoLeft {
 	max-height:100%;
 	position:absolute;
 	left:0px;
 	top:0px;
 }
-
-#titleLogoRight {
+.headerLogoRight {
 	max-height:100%;
 	position:absolute;
 	right:0px;
 	top:0px;
 }
 
-.titleMenu {
+.navMenu {
 	position:absolute;
-	right:20%;
-	top:20px;
+	right:22%;
+	top:10px;
 }
-
-.titleMenu a {
+.navMenu li {
+	display:inline;
+}
+.navMenu a {
 	text-decoration:none;
 	font-family:verdana;
 	font-weight:bold;
+	font-size:1em;
 	color:white;
 	margin:5px;
 	padding:5px; 
 }
-.titleMenu a:visited {
+.navMenu a:visited {
 	color:white;
 }
-.titleMenu a:hover {
+.navMenu a:hover {
 	color:#20d0ff;
 }
-.titleMenu a:active {
+.navMenu a:active {
 	color:red;
 }
 
 .socMedia {
 	position:absolute;
 	top:50%;
-	right:20%;
+	right:22%;
+	list-style:none;
+	padding-left:0px;
 }
-.socMedia ul li{
+.socMedia li{
 	display:inline;
 }
 .socMedia img {
@@ -80,6 +83,11 @@
 	color:white;
 }
 
+#FDTDCoverPic {
+	max-width:100%;
+	padding-top:10px;
+}
+
 #bandPhoto {
 	max-width:100%;
 	max-height:100%;
@@ -93,3 +101,99 @@
 	max-height:100px;
 	padding-left:5%;
 }
+
+@media (max-width:1400px) {
+	.content {
+		width:70%;
+	}
+	
+	.headerBar {
+		width:80%;
+		left:10%;
+		right:10%;
+	}
+}
+
+@media (max-width:1200px) {
+	.content {
+		width:80%;
+	}
+	
+	.headerBar {
+		width:90%;
+		left:5%;
+		right:5%;
+	}
+}
+
+@media (max-width:810px) {
+	.headerLogoRight {
+		display:none;
+	}
+	
+	.navMenu {
+		right:5%;
+	}
+	
+	.socMedia {
+		right:5%;
+	}
+}
+
+@media (max-width:660px) {
+	.navBtn:before {
+		content:url("hamburger_icon_scaled.png");
+	}
+	.navBtn {
+		position:absolute;
+		right:2%;
+		top:0px;
+	}
+
+	.navMenu {
+		display:none;
+		list-style:none;
+		padding-left:0px;
+		border:2px solid black;
+	}
+	.navMenu ul {
+		padding-left:0px;
+	}
+	.navMenu li {
+		display:block;
+		background-color:white;
+		opacity:.5;
+	}
+	.navMenu a {
+		color:black;
+	}
+	.navMenu a:visited {
+	color:black;
+	}
+	.navMenu a:hover {
+	color:#20d0ff;
+	}
+	.navMenu a:active {
+		color:red;
+	}
+	
+	.socMedia {
+		display:none;
+	}
+	
+	.headerLogoRight {
+		display:none;
+	}
+	.headerBar {
+		height:60px;
+	}
+	
+	.content {
+		padding-top:60px;
+	}
+}
+
+
+
+
+
