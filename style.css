@@ -4,31 +4,36 @@
 	left:0px;
 	padding:0px;
 	width:100%;
-	background-color:#555555;;
+	background-color:#555555;
+	background-image:url('Images/graveyard.jpg');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%;
 }
 
 footer {
 	position:absolute;
 	bottom:0px;
 	background-color:black;
-	height:120px;
+	height:60px;
 	width:100%;
 }
 
 .socMedia {
 	position:absolute;
-	top:50%;
-	right:22%;
+	right:5%;
+	top:10%;
 	list-style:none;
 	padding-left:0px;
 }
 .socMedia li{
-	display:inline;
+	display:inline-block;
 }
 .socMedia img {
 	max-height:30px;
 	padding-left:10px;
 	padding-right:10px;
+	padding-bottom:0px;
 }
 
 .content {
@@ -40,6 +45,8 @@ footer {
 }
 .content h2 {
 	color:white;
+	padding-top:50px;
+	font-family: 'Roboto', sans-serif;
 }
 
 #FDTDCoverPic {
@@ -74,7 +81,7 @@ footer {
 	}
 }
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:770px) {
 	.navBtn:before {
 		content:url("Images/hamburger_icon_scaled.png");
 	}
@@ -88,8 +95,5 @@ footer {
 		padding-top:60px;
 	}
 }
-
-
-
 
 

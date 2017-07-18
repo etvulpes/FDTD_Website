@@ -30,7 +30,7 @@ header {
 }
 .navMenu a {
 	text-decoration:none;
-	font-family:verdana;
+	font-family:'Roboto', sans-serif;
 	font-weight:bold;
 	font-size:1.3em;
 	color:white;
@@ -63,7 +63,7 @@ header {
 	}
 }
 
-@media only screen and (max-width:850px) {
+@media only screen and (max-width:950px) {
 	.headerLogoRight {
 		display:none;
 	}
@@ -73,7 +73,7 @@ header {
 	}
 }
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:770px) {
 	.navMenu {
 		display:none;
 		top:10px;
