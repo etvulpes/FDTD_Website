@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width.initial-scale=1"/>
+<title>From Dawn Till Death | About</title>
+	<link rel="stylesheet" href="CSS/style.css"/>
+	<link rel="stylesheet" href="CSS/nav.css"/>
+	<link rel="stylesheet" href="CSS/lightbox.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<script type="text/javascript" src="JS/lightbox.min.js"></script>
+	<link rel="stylesheet" href="CSS/about.css"/>
+</head>
+
+<body>
+	<div class="pageContainer">
+		<header>
+			<img class="headerLogoLeft" src="Images/ScaledFDTDLogo.png"/>
+			<img class="headerLogoRight" src="Images/ScaledFDTDLogo.png"/>
+			<div class="navBtn"></div>
+			<ul class="navMenu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="about.html" style="color:#ffd000;">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>	
+		</header>
+		<div class="content">
+			<h2 align="center">Meet the Band</h2>
+			<img id="bandPhoto" src="Images/bandPhoto.jpg"/>
+			<div id="photoCaption" align="center" style="color:white">
+				From left to right: Shaun Weigle, Kevin Kroushour, Ron Weigle, Louis Allison, Justin Weigle.
+			</div>
+			<div class="bioSection">
+				<p id="shaunathan">
+					<b>Name:</b> Shaun L Weigle <br /><br />
+					<b>Role:</b> Bass Guitar <br /><br />
+					<b>From:</b> York Springs, PA <br /><br />
+					<b>Favorite Bands:</b> Kix, Rush, Yes, Scorpions, GnR, Ax7, more. <br /><br />
+					<b>Influences:</b> Mark Schenker, Geddy Lee, Chris Squire.	
+				</p>
+			</div>
+			<div class="bioSection">
+				<p id="kevine">
+					<b>Name:</b> Kevin Kroushour <br /><br />
+					<b>Role:</b> Guitar/ Backup Vocals <br /><br />
+					<b>From:</b> East Berlin, PA <br /><br />
+					<b>Favorite Bands:</b> Bullet For My Valentine, Trivium, Issues, Breaking Benjamin, A Day To Remember, <br /><br /> Story of the Year, just to name a few. <br /><br />
+					<b>Influences:</b> Mark Tremonti, Adam Dutkiewicz, Kevin Skaff, Corey Beaulieu, Dan Jacobs
+				</p>
+			</div>
+			<div class="bioSection">
+				<p id="ocdopustenthackles">
+					<b>Name:</b> Ron Weigle <br /><br />
+					<b>Role:</b> Guitar/ Backup Vocals <br /><br />
+					<b>From:</b> York Springs, PA <br /><br />
+					<b>Favorite Bands:</b> Ozzy, Priest, Scorpions, GnR, Ax7, many more. <br /><br />
+					<b>Influences:</b> Slash, Satriani, Synyster Gates
+				</p>
+			</div>
+			<div class="bioSection">
+				<p id="loueee">
+					<b>Name:</b> Louis Allison <br /><br />
+					<b>Role:</b> Lead Vocals <br /><br />
+					<b>From:</b> York, PA <br /><br />
+					<b>Favorite Bands:</b>  <br /><br />
+					<b>Influences:</b> 
+				</p>
+			</div>
+			<div class="bioSection">
+				<p id="justine">
+					<b>Name:</b> Justin Weigle <br /><br />
+					<b>Role:</b> Drums/ Backup Vocals <br /><br />
+					<b>From:</b> York Springs, PA <br /><br />
+					<b>Favorite Bands:</b> A7x, Issues, SystemOAD, Blink-182, State Champs, With Confidence, etc <br /><br />
+					<b>Influences:</b> Jimmy "The Rev" Sullivan, Travis Barker, Evan Ambrosio
+				</p>
+			</div>
+		</div>
+		<footer>
+			<div id="credit" style="position:absolute; left:20%; top:25%; color:#aaa;">Website design by: Justin Weigle</div> 
+			<ul class="socMedia">
+				<li><a href="https://www.facebook.com/fromdawntilldeath/" title="From Dawn Till Death Facebook"><img src="Images/fbLogo.png"/></a></li>
+				<li><img src="Images/twitterLogo.png"/></li>
+				<li><img src="Images/instaLogo.png"/></li>
+				<li><a href="https://www.reverbnation.com/fromdawntilldeath" title="From Dawn Till Death Reverbnation"><img src="Images/reverbLogo.png"/></a></li>
+			</ul>	
+		</footer>
+	</div>
+	<script>
+		$('div.navBtn').click(function() {
+			$('ul.navMenu').slideToggle();
+		});
+		
+		$(window).resize(function() {
+			if( $(window).width() > 660 ) {
+				$('ul.navMenu').removeAttr('style');
+			}
+		});
+	</script>
+</body>
+</html>
