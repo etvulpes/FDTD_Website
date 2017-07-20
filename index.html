@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width.initial-scale=1"/>
-	<title>From Dawn Till Death Official</title>
-	<link rel="stylesheet" href="style.css"/>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width.initial-scale=1"/>
+<title>From Dawn Till Death Official</title>
+	<link rel="stylesheet" href="CSS/style.css"/>
+	<link rel="stylesheet" href="CSS/nav.css"/>
+	<link rel="stylesheet" href="CSS/gallery.css"/>
+	<link rel="stylesheet" href="CSS/lightbox.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script type="text/javascript" src="JS/lightbox.min.js"></script>
 </head>
 
 <body>
 	<div class="pageContainer">
-		<div id="header">
-			<script>
-				$('document').ready(function() {
-					$('#header').load('header.html');
-				});	
-			</script>
-		</div>
+		<header>
+			<img class="headerLogoLeft" src="Images/ScaledFDTDLogo.png"/>
+			<img class="headerLogoRight" src="Images/ScaledFDTDLogo.png"/>
+			<div class="navBtn"></div>
+			<ul class="navMenu">
+				<li><a href="index.html" style="color:#ffd000;">Home</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact/Book Us</a></li>
+			</ul>	
+		</header>
 		<div class="content">
 			<img id="FDTDCoverPic" src="Images/FDTD_Cover_Photo.jpg"/>
 			<h2 align="center">Upcoming Shows</h2>
@@ -28,8 +36,33 @@
 					<center><a href="https://www.reverbnation.com/band-promotion/promoteit?utm_campaign=a_features_promote_it&utm_medium=widget&utm_source=HTML5_Show_Schedule&utm_content=widgetfooter_Learn how to get your music noticed at ReverbNation.com" target="_blank" style="text-decoration:none;color:#444;">Learn how to get your music noticed at ReverbNation.com</a></center>
 				</div>
 			</div>
+		<hr style="margin-top:60px;" />
 			<h2 align="center">Show Highlights</h2>
-			<img id="bandPhoto" src="Images/bandPhoto.jpg"/>
+			<div class="galleryBox">
+				<div id="showHighlights">	
+					<a href="Images/1_Full.jpg" data-lightbox="May_2017"><img src="Images/1_Thumb.jpg"/></a>
+					<a href="Images/2_Full.jpg" data-lightbox="May_2017"><img src="Images/2_Thumb.jpg"/></a>
+					<a href="Images/3_Full.jpg" data-lightbox="May_2017"><img src="Images/3_Thumb.jpg"/></a>
+					<a href="Images/4_Full.jpg" data-lightbox="May_2017"><img src="Images/4_Thumb.jpg"/></a>
+				</div>
+			</div>
+			<div class="galleryBox">
+				<div id="showHighlights">	
+					<a href="Images/1_Full.jpg" data-lightbox="May_2017"><img src="Images/1_Thumb.jpg"/></a>
+					<a href="Images/2_Full.jpg" data-lightbox="May_2017"><img src="Images/2_Thumb.jpg"/></a>
+					<a href="Images/3_Full.jpg" data-lightbox="May_2017"><img src="Images/3_Thumb.jpg"/></a>
+					<a href="Images/4_Full.jpg" data-lightbox="May_2017"><img src="Images/4_Thumb.jpg"/></a>
+				</div>
+			</div>
+			<div class="galleryBox">
+				<div id="showHighlights">	
+					<a href="Images/1_Full.jpg" data-lightbox="May_2017"><img src="Images/1_Thumb.jpg"/></a>
+					<a href="Images/2_Full.jpg" data-lightbox="May_2017"><img src="Images/2_Thumb.jpg"/></a>
+					<a href="Images/3_Full.jpg" data-lightbox="May_2017"><img src="Images/3_Thumb.jpg"/></a>
+					<a href="Images/4_Full.jpg" data-lightbox="May_2017"><img src="Images/4_Thumb.jpg"/></a>
+				</div>
+			</div>
+		<hr style="margin-top:60px;" />
 			<h2 align="center">Venues We Play At</h2>
 			<ul id="venuesList" style="list-style-type:none; padding-left:0px">
 				<li><img src="Images/fatDaddysLogo.png"/></li>
@@ -37,6 +70,8 @@
 				<li><img src="Images/bourbonLogo.jpg"/></li>
 				<hr align="center" style="width:95%" />
 				<li><img src="Images/fallJamLogo.jpg"/></li>
+				<hr align="center" style="width:95%" />
+				<li><img src="Images/tubbysLogo.jpg"/></li>
 				<hr align="center" style="width:95%" />
 			</ul>
 		</div>
@@ -50,5 +85,16 @@
 			</ul>	
 		</footer>
 	</div>
+	<script>
+		$('div.navBtn').click(function() {
+			$('ul.navMenu').slideToggle();
+		});
+		
+		$(window).resize(function() {
+			if( $(window).width() > 660 ) {
+				$('ul.navMenu').removeAttr('style');
+			}
+		});
+	</script>
 </body>
 </html>

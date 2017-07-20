@@ -3,55 +3,91 @@
 
 <head>
 <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width.initial-scale=1"/>
 <title>From Dawn Till Death Gallery</title>
-	<style>
-		img {
-			width:100px;
-			height:90px;
-		}
-		th {
-			font-size:2em;
-			background-color:#f9ddff;
-			padding:20px;
-		}
-		body {
-			font-family:sans-serif;
-			font-size:1em;
-			text-align:center;
-			background:silver;
-		}
-		table {
-			background-color:white;
-			width:60%;
-			border:2px solid black;
-		}
-		td {
-			padding:25px;
-		}
-	</style>
+	<link rel="stylesheet" href="CSS/style.css"/>
+	<link rel="stylesheet" href="CSS/nav.css"/>
+	<link rel="stylesheet" href="CSS/gallery.css"/>
+	<link rel="stylesheet" href="CSS/lightbox.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="JS/lightbox.min.js"></script>
 </head>
 
 <body>
-	<table align="center">
-		<tr>
-			<th colspan="4">Photo Gallery</th>
-		</tr>
-		<tr>
-			<td colspan="4">Click on the thumbnails to open the image in a separate tab</td>
-		</tr>
-		<tr>
-			<td><img src="Images/1.jpg"/></td>
-			<td><img src="Images/2.jpg"/></td>
-			<td><img src="Images/3.jpg"/></td>
-			<td><img src="Images/4.jpg"/></td>
-		</tr>
-		<tr>
-			<td><img src="Images/5.jpg"/></td>
-			<td><img src="Images/6.jpg"/></td>
-			<td><img src="Images/7.jpg"/></td>
-			<td><img src="Images/8.jpg"/></td>
-		</tr>
-	</table>
-	
+	<div class="pageContainer">
+		<header>
+			<img class="headerLogoLeft" src="Images/ScaledFDTDLogo.png"/>
+			<img class="headerLogoRight" src="Images/ScaledFDTDLogo.png"/>
+			<div class="navBtn"></div>
+			<ul class="navMenu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="gallery.html" style="color:#ffd000;">Gallery</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact/Book Us</a></li>
+			</ul>	
+		</header>
+		<div class="content">
+			<h2 align="center">July 2017</h2>
+			<div class="galleryBox">
+				<div id="July_2017">	
+					<a href="Images/1_Full.jpg" data-lightbox="July_2017" data-title="Cinema One"><img src="Images/1_Thumb.jpg"/></a>
+					<a href="Images/2_Full.jpg" data-lightbox="July_2017"><img src="Images/2_Thumb.jpg"/></a>
+					<a href="Images/3_Full.jpg" data-lightbox="July_2017"><img src="Images/3_Thumb.jpg"/></a>
+					<a href="Images/4_Full.jpg" data-lightbox="July_2017"><img src="Images/4_Thumb.jpg"/></a>
+				</div>
+			</div>
+		<hr style="margin-top:60px;" />
+			<h2 align="center">June 2017</h2>
+			<div class="galleryBox">
+				<div id="June_2017">
+					<a href="Images/5_Full.jpg" data-lightbox="June_2017"><img src="Images/5_Thumb.jpg"/></a>
+					<a href="Images/6_Full.jpg" data-lightbox="June_2017"><img src="Images/6_Thumb.jpg"/></a>
+					<a href="Images/7_Full.jpg" data-lightbox="June_2017"><img src="Images/7_Thumb.jpg"/></a>
+					<a href="Images/8_Full.jpg" data-lightbox="June_2017"><img src="Images/8_Thumb.jpg"/></a>
+				</div>
+			</div>
+		<hr style="margin-top:60px;" />
+			<h2 align="center">May 2017</h2>
+			<div class="galleryBox">
+				<div id="May_2017">	
+					<a href="Images/1_Full.jpg" data-lightbox="May_2017"><img src="Images/1_Thumb.jpg"/></a>
+					<a href="Images/2_Full.jpg" data-lightbox="May_2017"><img src="Images/2_Thumb.jpg"/></a>
+					<a href="Images/3_Full.jpg" data-lightbox="May_2017"><img src="Images/3_Thumb.jpg"/></a>
+					<a href="Images/4_Full.jpg" data-lightbox="May_2017"><img src="Images/4_Thumb.jpg"/></a>
+				</div>
+			</div>
+		<hr style="margin-top:60px;" />
+			<h2 align="center">April 2017</h2>
+			<div class="galleryBox">
+				<div id="April_2017">
+					<a href="Images/5_Full.jpg" data-lightbox="April_2017"><img src="Images/5_Thumb.jpg"/></a>
+					<a href="Images/6_Full.jpg" data-lightbox="April_2017"><img src="Images/6_Thumb.jpg"/></a>
+					<a href="Images/7_Full.jpg" data-lightbox="April_2017"><img src="Images/7_Thumb.jpg"/></a>
+					<a href="Images/8_Full.jpg" data-lightbox="April_2017"><img src="Images/8_Thumb.jpg"/></a>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div id="credit" style="position:absolute; left:20%; top:25%; color:#aaa;">Website design by: Justin Weigle</div> 
+			<ul class="socMedia">
+				<li><a href="https://www.facebook.com/fromdawntilldeath/" title="From Dawn Till Death Facebook"><img src="Images/fbLogo.png"/></a></li>
+				<li><img src="Images/twitterLogo.png"/></li>
+				<li><img src="Images/instaLogo.png"/></li>
+				<li><a href="https://www.reverbnation.com/fromdawntilldeath" title="From Dawn Till Death Reverbnation"><img src="Images/reverbLogo.png"/></a></li>
+			</ul>	
+		</footer>
+	</div>
+	<script>
+		$('div.navBtn').click(function() {
+			$('ul.navMenu').slideToggle();
+		});
+		
+		$(window).resize(function() {
+			if( $(window).width() > 660 ) {
+				$('ul.navMenu').removeAttr('style');
+			}
+		});
+	</script>
 </body>
 </html>

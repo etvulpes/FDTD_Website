@@ -5,7 +5,7 @@
 	padding:0px;
 	width:100%;
 	background-color:#555555;
-	background-image:url('Images/graveyard.jpg');
+	background-image:url('../Images/graveyard.jpg');
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:100% 100%;
@@ -61,7 +61,7 @@ footer {
 
 #venuesList {
 	max-width:100%;
-	background-color:#aaaaaa;
+	background-color:#696970;
 	border:2px solid black;
 }
 #venuesList li img {
@@ -83,7 +83,7 @@ footer {
 
 @media only screen and (max-width:770px) {
 	.navBtn:before {
-		content:url("Images/hamburger_icon_scaled.png");
+		content:url("../Images/hamburger_icon_scaled.png");
 	}
 	.navBtn {
 		position:absolute;
