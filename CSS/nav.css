@@ -41,7 +41,7 @@ header {
 	color:white;
 }
 .navMenu a:hover {
-	color:#20d0ff;
+	color:silver;
 }
 .navMenu a:active {
 	color:#ff4f4f;
@@ -94,7 +94,7 @@ header {
 		color:black;
 	}
 	.navMenu a:hover {
-	color:#20d0ff;
+	color:silver;
 	}
 	.navMenu a:active {
 		color:#ff4f4f;
