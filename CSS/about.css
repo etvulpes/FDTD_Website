@@ -22,7 +22,6 @@
 }
 
 #shaunathan {
-	background-color:black;
 	position:absolute;
 	top:15%;
 	left:5%;
@@ -76,8 +75,29 @@
 }
 
 
-@media only screen and (max-width:770px) {
+@media only screen and (max-width:830px) {
 	.bioSection {
-		height:500px;
+		height:900px;
 	}
+	.bioSection img {
+		top:0;
+		right:20%;
+		max-width:80%;
+	}
+	#shaunathan {
+		top:50%;
+	}
+	#kevine {
+		top:48%;
+	}
+	#ocdopustenthackles {
+		top:50%;
+	}
+	#loueee {
+		top:50%;
+	}
+	#justine {
+		top:50%;
+	}
+
 }
