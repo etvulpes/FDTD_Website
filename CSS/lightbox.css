@@ -1,4 +1,5 @@
 /* Preload images */
+
 body:after {
   content: url(../Images/close.png) url(../Images/loading.gif) url(../Images/prev.png) url(../Images/next.png);
   display: none;
@@ -35,7 +36,6 @@ body.lb-disable-scrolling {
   max-width: inherit;
   max-height: none;
   border-radius: 3px;
-
   /* Image border */
   border: 4px solid white;
 }
@@ -51,7 +51,6 @@ body.lb-disable-scrolling {
   height: 250px;
   margin: 0 auto;
   border-radius: 4px;
-
   /* Background color behind image.
      This is visible during transitions. */
   background-color: white;
@@ -90,7 +89,7 @@ body.lb-disable-scrolling {
   z-index: 10;
 }
 
-.lb-container > .nav {
+.lb-container>.nav {
   left: 0;
 }
 
