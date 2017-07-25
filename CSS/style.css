@@ -3,6 +3,7 @@
   top: 0px;
   left: 0px;
   padding: 0px;
+  min-height: 100%;
   width: 100%;
   background-color: #555555;
   background-image: url('../Images/graveyard.jpg');
@@ -13,7 +14,7 @@
 
 .content {
   background-color: rgba(0, 0, 0, 0.5);
-  width: 60%;
+  width: 70%;
   height: 100%;
   margin: auto;
   padding: 120px 0% 120px 0%;
@@ -65,17 +66,17 @@ footer {
 
 @media only screen and (max-width:1400px) {
   .content {
-    width: 70%;
+    width: 80%;
   }
 }
 
 @media only screen and (max-width:1200px) {
   .content {
-    width: 80%;
+    width: 90%;
   }
 }
 
-@media only screen and (max-width:770px) {
+@media only screen and (max-width:800px) {
   .navBtn:before {
     content: url("../Images/hamburger_icon_scaled.png");
   }
